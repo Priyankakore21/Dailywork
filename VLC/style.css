@@ -1,0 +1,46 @@
+@import "style1.css";
+@document url(http://www.w3.org/){
+    body {
+        color: purple;
+        background: yellow;
+      }
+    }
+@media (max-width: 1000px) {
+    body {
+        background-color: orchid;
+    }
+
+
+}
+h1 {
+    color: blue;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: rotateX('45');
+   /* width: calc(90% - 15px);*/
+  }
+  
+  p {
+    color: red;
+  }
+  
+  p, li {
+    text-decoration: underline;
+  }
+
+  h2{
+    color: orange;
+    background-color: green;
+    border: 1px solid black;
+  }
+
+  .g{
+      color: brown;
+  }
+  
+  div{
+    color: blue;
+    padding:10%;
+    background-color: whitesmoke;
+    border: 5px solid black;
+  }

@@ -1,0 +1,25 @@
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
+class ClockState extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { date: new Date() };
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>Hello from ClockState</h1>
+                <h2>It is {this.state.date.toLocaleTimeString()}</h2>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(
+    <ClockState />,
+    document.getElementById('root')
+);
+
+export default ClockState;

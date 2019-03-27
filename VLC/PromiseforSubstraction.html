@@ -1,0 +1,49 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+       let  getSubstraction = function (number1, number2) {
+      return new Promise(function (resolve, reject) {
+                let validParameter =  number1 !== undefined && number2 !== undefined;
+                let isPositive = number1 > 0 && number2 > 0;
+
+                if (validParameter && isPositive) {
+                    let result = number1 - number2;
+                    resolve(result);
+                }
+                else {
+                    let message = "default";
+                    if (!validParameter) {
+                        message = "Numbers are not valid";
+                    }
+                    if (!isPositive) {
+                        message = "Numbers are negative";
+                    }
+                    reject(message);
+                }
+               
+            })
+            
+        }
+
+        console.log("Before promise.....");
+
+        getSubstraction(5,2).then(
+            function (substraction) {
+                console.log(substraction);
+                console.log("This will get executed when my promise is resolved");
+            },
+            function (responseMessage) {
+
+                console.log(responseMessage);
+            });
+
+        console.log("After promise.....");
+
+    </script>
+
+</body>
+
+</html>

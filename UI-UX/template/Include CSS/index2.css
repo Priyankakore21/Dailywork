@@ -1,0 +1,24 @@
+*{
+    color:blue;
+    }
+    p{
+        color: aqua;
+        /* position:fixed; */
+        
+    }
+    .mango_desc{
+        background-color: blueviolet;
+    }
+    #s{
+        color: pink;
+    }
+    div{
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+    div > p{
+        color: green;
+    }
+    .h1{
+        font-family: 'Felipa', cursive;
+    }

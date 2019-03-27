@@ -1,0 +1,55 @@
+.main {
+  text-align: center;
+  background-color: whitesmoke;
+}
+.first {
+  background-color: bisque;
+}
+.cloud1 {
+  margin-left: 50%;
+}
+.cloud2 {
+  margin-right: 30%;
+}
+.h1 {
+  font-family: "Felipa", cursive;
+  color: orange;
+}
+.h2 {
+  color: orange;
+}
+.mountain {
+  height: 200px;
+  width: 200px;
+}
+.girl {
+  height: 100px;
+  width: 100px;
+}
+.para {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+.laptop {
+  margin-right: 30%;
+  height: 100px;
+  width: 100px;
+}
+.hiking {
+  margin-left: 30%;
+  height: 100px;
+  width: 100px;
+}
+button {
+  background-color: orange;
+  color: white;
+  border-radius: 8px;
+  height: 40px;
+  width: 140px;
+}
+footer{
+    margin-top: 1%;
+    background-color: orange;
+    height: 120;
+}

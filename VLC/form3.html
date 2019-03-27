@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <script>
+       function A(x) {
+           return function B(y) {
+             return function C(z) {
+                    console.log(x + y + z);
+                }
+                // C(3);
+            }
+            // B(2);
+        }
+        // A(1);
+         let var1=A(1);
+       
+       //  A(7)(6)(4);
+    </script>
+</body>
+
+</html>

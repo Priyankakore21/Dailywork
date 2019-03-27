@@ -1,0 +1,47 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+
+
+        let getAddition = function (number1, number2) {
+
+            return new Promise(function (resolve, reject) {
+
+                let validParameter = number1 !== undefined && number2 !== undefined;
+                let isPositive = number1 > 0 && number2 > 0;
+                if (validParameter && isPositive) {
+                    let result = number1 + number2;
+                    resolve(result);
+                } else {
+                    let message = "default";
+                    if (!validParameter) {
+                        message = "parameters are not valid";
+                    }
+                    if (!isPositive) {
+                        message = "negatives are not allowed";
+                    }
+
+                    reject(message);
+                }
+            })
+        }
+
+        console.log("this is before promise");
+        getAddition(4, 4).then(
+            function (addition) {
+                console.log(addition);
+                console.log("this will get executed when myPromise is resolved.");
+            },
+            function (responseMessage) {
+                console.log(responseMessage);
+
+            });
+        document.writeln("this is after promise");
+    </script>
+
+</body>
+
+</html>
